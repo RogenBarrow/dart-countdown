@@ -3,27 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Christmas Countdown</title>
+  <title>Christmas & New Year Countdown</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      margin-top: 20%;
       background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
       color: #ffffff;
     }
-    #countdown {
-      font-size: 32px;
-      margin-top: 20px;
-    }
-    h1 {
+    h1, h2 {
       color: #ff6b6b;
+    }
+    #countdowns {
+      margin-top: 20%;
+    }
+    .countdown {
+      font-size: 24px;
+      margin: 20px 0;
     }
   </style>
 </head>
 <body>
-  <h1>🎄 Christmas Countdown 🎅</h1>
-  <div id="countdown">Loading...</div>
+  <h1>🎄 Christmas & New Year Countdown 🎆</h1>
+  <div id="countdowns">
+    <h2>Christmas Countdown</h2>
+    <div id="christmas-countdown" class="countdown">Loading...</div>
+
+    <h2>New Year Countdown</h2>
+    <div id="new-year-countdown" class="countdown">Loading...</div>
+  </div>
   <script defer src="main.dart.js"></script>
 </body>
 </html>
